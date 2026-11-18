@@ -207,7 +207,7 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;font-weight:600;padd
 <body>
 
 <header class="topbar">
-  <div class="brand"><img class="logo" src="logo.svg" alt="Istituto Superiore Ivan Piana"><div>🏪 Missione Bottega<small>Economia Aziendale · Open Day</small></div></div>
+  <div class="brand"><img class="logo" src="assets/logo.svg" alt="Istituto Superiore Ivan Piana"><div>🏪 Missione Bottega<small>Economia Aziendale · Open Day</small></div></div>
   <div class="steps" id="steps"></div>
   <div class="chips">
     <div class="chip" id="timer">⏱️ 00:00</div>
@@ -217,7 +217,7 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;font-weight:600;padd
 
 <div id="splash">
   <div class="pre">
-    <div class="logo-box" style="display:inline-block"><img src="logo.svg" alt="Istituto Superiore Ivan Piana"></div>
+    <div class="logo-box" style="display:inline-block"><img src="assets/logo.svg" alt="Istituto Superiore Ivan Piana"></div>
     <h1 class="mt">Open Day · Economia Aziendale</h1>
     <p style="font-weight:600;font-size:1.1rem;opacity:.9" class="mt-s">Pronti a scoprire come funziona un'azienda? 🚀</p>
     <div class="row mt" style="justify-content:center">
@@ -225,7 +225,7 @@ footer{text-align:center;color:var(--muted);font-size:.8rem;font-weight:600;padd
       <button class="btn alt" id="skipPre">Vai al gioco ➜</button>
     </div>
   </div>
-  <video id="introVideo" src="intro.mp4" playsinline preload="auto"></video>
+  <video id="introVideo" src="assets/intro.mp4" playsinline preload="auto"></video>
   <button class="btn skip" id="skipVid">Salta l'intro ⏭</button>
 </div>
 
@@ -353,7 +353,7 @@ function stageHead(i, sub){
 
 /* ===================== GUIDA (AVATAR) ===================== */
 function guide(html, who='La tua prof di Economia Aziendale', cls=''){
-  return `<div class="guide ${cls}"><img class="face" src="avatar-volto.jpg" alt="Avatar della prof"><div class="bubble"><span class="who">${who}</span>${html}</div></div>`;
+  return `<div class="guide ${cls}"><img class="face" src="assets/avatar-volto.jpg" alt="Avatar della prof"><div class="bubble"><span class="who">${who}</span>${html}</div></div>`;
 }
 
 /* ===================== VIDEO INTRO ===================== */
@@ -392,7 +392,7 @@ function intro(){
           <span style="color:var(--muted);font-weight:700">⏱️ circa 12 minuti</span></div>
       </div>
       <div class="hero-av">
-        <img class="full" src="avatar.jpg" alt="Avatar della prof di Economia Aziendale">
+        <img class="full" src="assets/avatar.jpg" alt="Avatar della prof di Economia Aziendale">
         <span class="fl" style="top:10px;left:4%">💶</span>
         <span class="fl" style="top:40%;right:2%;animation-delay:.6s">📈</span>
         <span class="fl" style="top:6px;right:12%;animation-delay:1.2s">🏪</span>
@@ -627,7 +627,7 @@ function finale(){
       <div class="score">${S.cash.toLocaleString('it-IT')} € <span style="font-size:1.2rem;color:var(--muted)">su ${MAX.toLocaleString('it-IT')} €</span></div>
       <p style="color:var(--muted);font-weight:600">⏱️ Tempo: ${time}</p>
       <div class="mt" style="max-width:640px;margin-left:auto;margin-right:auto;text-align:left">${guide(msg + ' Ti aspettiamo all\'<b>Ivan Piana</b>! 💼')}</div>
-      <img src="logo.svg" alt="Istituto Superiore Ivan Piana" style="height:70px;margin-top:6px">
+      <img src="assets/logo.svg" alt="Istituto Superiore Ivan Piana" style="height:70px;margin-top:6px">
     </div>
 
     <div class="cols mt">
